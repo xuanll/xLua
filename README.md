@@ -26,3 +26,5 @@ lua programming fundation
 - `tonumber`字符串转数字
 
 - `require`引入模块
+
+- 不支持`++`这种自增操作
