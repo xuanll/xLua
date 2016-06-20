@@ -24,3 +24,5 @@ lua programming fundation
 - 循环中，`pairs`与`ipairs`。`ipairs`只循环key为整数的元素，从下标为1的开始，碰到下标不连续或者key不是整数的则退出循环；`pairs`则循环整个table的所有值
 
 - `tonumber`字符串转数字
+
+- `require`引入模块
