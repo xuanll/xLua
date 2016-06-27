@@ -32,3 +32,12 @@ lua programming fundation
 - Lua中写方法都要跟上类名，`.`跟类方法，`:`跟普通方法
 
 - `if`语句需要跟`then`，每个条件两边都要跟，最后的`else`后没有`then`
+
+- dofile("XXX")载入后每次调用可执行,loadfile("XXX")载入后不执行,require("XXX")载入后只执行第一次载入
+
+- 哑元(dummy varialbe,`_`)
+```Lua
+	-- 返回第二个匹配的值
+	local _, x = string.find(s, p)
+
+```
