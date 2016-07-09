@@ -41,3 +41,11 @@ lua programming fundation
 	local _, x = string.find(s, p)
 
 ```
+
+- lua中调用父类方法
+  1. 父类 = require("父类")
+  2. 子类中 父类.方法名(self, param[])调用
+
+
+- lua类变量不用local修饰
+~~local~~ UITerritory.logic = nil
