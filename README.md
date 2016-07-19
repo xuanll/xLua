@@ -47,5 +47,17 @@ lua programming fundation
   2. 子类中 父类.方法名(self, param[])调用
 
 
-- lua类变量不用local修饰
+- ~~lua类变量~~不用`local`修饰
 ~~local~~ UITerritory.logic = nil
+
+- 全局变量无需定义，销毁赋值为`nil`即可
+
+- 区块注释
+```Lua
+
+  --[[
+	comments
+	--]]
+```
+
+- Lua中只有`false`和`nil`的布尔值是false，其余（0和空table等）都是true
