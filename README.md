@@ -61,3 +61,11 @@ lua programming fundation
 ```
 
 - Lua中只有`false`和`nil`的布尔值是false，其余（0和空table等）都是true
+
+- Lua中的Table既不是值也不是变量，而是**对象**
+
+- `userdata`类型可以将任意的C数据保存到Lua的变量中
+
+- 求幂操作`^`并没有包含到Lua core中，需要使用`math.pow(a,b)`
+
+- Lua中没有C语言的三元符`(x ? a : b)`，但有一个替代方案`(x and a) or b`。**需要注意的是，以上方案在x为true，a为false，b为true的情况下与三元符的结果是相反的**
