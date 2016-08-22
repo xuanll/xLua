@@ -71,3 +71,5 @@ lua programming fundation
 - Lua中没有C语言的三元符`(x ? a : b)`，但有一个替代方案`(x and a) or b`。**需要注意的是，以上方案在x为true，a为false，b为true的情况下与三元符的结果是相反的**
 
 - `[[...]]`包围的字符串不需要使用`\`转义修饰符
+
+- Lua API查询 [LuaSearch](http://math2.org/luasearch/)
