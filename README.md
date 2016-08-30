@@ -62,6 +62,8 @@ lua programming fundation
 
 - Lua中只有`false`和`nil`的布尔值是false，其余（0和空table等）都是true
 
+- Lua的数字只有`double`型,64bits
+
 - Lua中的Table既不是值也不是变量，而是**对象**
 
 - `userdata`类型可以将任意的C数据保存到Lua的变量中
