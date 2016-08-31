@@ -77,3 +77,6 @@ lua programming fundation
 - Lua API查询 [LuaSearch](http://math2.org/luasearch/)
 
 - Lua中`pcall`(protected call)遇到返回两个参数，有error时返回`false`，没有时返回`true` [pcall官方文档](https://www.lua.org/pil/8.4.html)
+```
+local bHasErr, result = pcall(FuncName, param1, param2, ...)
+```
