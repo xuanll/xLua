@@ -20,6 +20,11 @@ lua programming fundation
 - index从1开始(其他大多数从0开始)
 
 - `#`用来取`table`的长度
+```Lua
+	-- fater way insert value
+	t[#t+1] = value
+```
+p.s. [Ref](http://wuzhiwei.net/lua_style_guide/#comments)
 
 - 循环中，`pairs`与`ipairs`。`ipairs`只循环key为整数的元素，从下标为1的开始，碰到下标不连续或者key不是整数的则退出循环；`pairs`则循环整个table的所有值
 
@@ -80,3 +85,5 @@ lua programming fundation
 ```
 local bHasErr, result = pcall(FuncName, param1, param2, ...)
 ```
+
+- [一行代码判断表是否为空](http://wuzhiwei.net/lua_style_guide/#comments)
