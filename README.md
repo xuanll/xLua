@@ -87,3 +87,10 @@ local bHasErr, result = pcall(FuncName, param1, param2, ...)
 ```
 
 - [一行代码判断表是否为空](http://wuzhiwei.net/lua_style_guide/#comments)
+```
+-- #运算符会忽略不连续和非数字下标
+if next(t) == nil then 
+    -- 表为空
+    -- ...
+end
+```
