@@ -17,11 +17,11 @@ lua programming fundation
 
 - 空值`nil`
 
-- index从1开始(其他大多数从0开始)
+- index(索引)从1开始(其他大多数编程语言索引从0开始)
 
 - `#`用来取`table`的长度
 ```Lua
-	-- fater way insert value
+	-- faster way insert value
 	t[#t+1] = value
 ```
 p.s. [Ref](http://wuzhiwei.net/lua_style_guide/#comments)
@@ -73,7 +73,7 @@ p.s. [Ref](http://wuzhiwei.net/lua_style_guide/#comments)
 
 - `userdata`类型可以将任意的C数据保存到Lua的变量中
 
-- 求幂操作`^`并没有包含到Lua core中，需要使用`math.pow(a,b)`
+- 求幂操作符`^`并没有包含到Lua core中，需要使用`math.pow(a,b)`
 
 - Lua中没有C语言的三元符`(x ? a : b)`，但有一个替代方案`(x and a) or b`。**需要注意的是，以上方案在x为true，a为false，b为true的情况下与三元符的结果是相反的**
 
@@ -94,5 +94,3 @@ if next(t) == nil then
     -- ...
 end
 ```
-
-- `Mathf.RoundToInt`: 返回最接近的整数，距离相同时，返回偶数
